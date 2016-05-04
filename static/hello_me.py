@@ -30,7 +30,4 @@ def catch_all(path):
     return redirect('https://www.google.co.uk/search?q=' + path)
 
 if __name__ == '__main__':
-     port = int(os.getenv('PORT', 8080))
-     host = os.getenv('IP', '0.0.0.0')
-     app.run()
-     debug=True
+    app.run(port=8080, host='0.0.0.0', debug=True)
