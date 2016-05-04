@@ -1,0 +1,54 @@
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  position: fixed;
+}
+
+.row.content {
+  height:auto; 
+}
+
+
+header{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg) ;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+}
+
+footer{ 
+    display: block;
+    background-color: black;
+}
+
+#headerone{
+  background-size: 100vh;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding-top: 250px;
+  font-size: 100px;
+  font-family: serif; 
+  text-align: center;
+  color: #ccccff;
+}
+
+
+p{
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 28px;
+  font-size: x-large;
+  color: #0099ff;
+}
+
+html,body{height:100%;width:100%}
+.carousel,.item,.active{height:100%;width: 100%}
+.carousel-inner{height:100%;width:100%}
