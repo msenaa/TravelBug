@@ -58,5 +58,11 @@ html,body{height:100%;width:100%}
 }
 
 body{
-  padding-top: 100px;
+  padding-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;}
 }
