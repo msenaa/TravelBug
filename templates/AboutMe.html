@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 
+
 {% block navbar %}
 
 
@@ -31,6 +32,12 @@
 
 {% block content %}
 
+
+<script src="static/js/clock.js"></script>
+<body onload="startTime()">
+<div id="clock"></div>
+
+
         <style>
           body {background-image:url(http://wallpapercave.com/wp/8aDIsFH.jpg);}
           body {background-size:cover;}
@@ -55,15 +62,15 @@
       <div class="row">
         <div class="col-sm-4">
           <p id="some" class="text-center">You can find me on LinkedIn</p>
-          <a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"><img src="Images/li.png" class="img-circle person" style="width:225" height="225" alt="Image"></a>
+          <a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"><img src="static/Images/li.png" class="img-circle person" style="width:225" height="225" alt="Image"></a>
         </div>
         <div class="col-sm-4"> 
           <p id="some" class="text-center">On Facebook</p>
-          <a href="https://www.facebook.com/mariah.senaa"><img src="Images/fb.jpg" class="img-circle person" style="width:225" height="225" alt="Image"></a>
+          <a href="https://www.facebook.com/mariah.senaa"><img src="static/Images/fb.jpg" class="img-circle person" style="width:225" height="225" alt="Image"></a>
         </div>
         <div class="col-sm-4"> 
           <p id="some" class="text-center">& also Twitter</p>
-          <a href="https://twitter.com/mozzz1995"><img src="Images/twit.png" class="img-circle person" style="width:225" height="225" alt="Image"></a>
+          <a href="https://twitter.com/mozzz1995"><img src="static/Images/twit.png" class="img-circle person" style="width:225" height="225" alt="Image"></a>
         </div>
       </div>
     </div>

@@ -102,3 +102,9 @@ body{
 #title{
   color: #ffffff;
 }
+
+#clock{
+  font-size: 100px;
+  text-align: center;
+  color: white;
+}
