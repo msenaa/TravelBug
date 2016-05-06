@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block navbar %}
+  
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+        <a class="navbar-brand" href="#">Travel Bug</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('AboutMe') }}">About Me</a></li>
+          <li><a href="{{ url_for('Places') }}">Places</a></li>
+          </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="active" href="{{ url_for('comment') }}"><span class="glyphicon glyphicon-log-in"></span> Comment</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+{% endblock %}
+
+
+{% block content %}
+        <style>
+          body {background-image:url(http://www.wanderingme.com/wp-content/uploads/2015/02/39.jpg);}
+          body {background-size:cover;}
+        </style>
+        
+        <h1 id="commentheader">Leave a comment down below</h1>
+        
+          <form id="commentsform" action="" method="post">
+              <label for="nameId" style="color:white;">Name:</label>
+              <br>
+              <input type="text" name="name" id="nameId">
+              <br>
+              <label for="commentsId" style="color:white;">Comments:</label>
+              <br>
+              <textarea name="comments" id="commentsId" cols="30" rows="10"></textarea>
+              <br>
+              <input type="submit" value="Submit">
+          </form>
+{% endblock %}
