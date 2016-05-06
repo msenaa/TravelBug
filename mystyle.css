@@ -66,3 +66,39 @@ body{
     [class*="col-"] {
         width: 100%;}
 }
+
+
+#commentheader{
+  text-align: center;
+  font-size: 80px;
+  color: #ffffcc;
+  padding-top: 100px;
+  font-family: cursive;
+}
+
+#usrform{
+  align-items: center;
+  padding-left: 100px;
+  
+}
+#usrcomment{
+  padding-left: 50px;
+  align-items:center;
+}
+
+#commentsform{
+  padding-left: 550px;
+  padding-top: 50px;
+}
+
+#some{
+  color: #e6e6ff;
+}
+
+#aboutme{
+  color: #e6e6ff;
+}
+
+#title{
+  color: #ffffff;
+}
